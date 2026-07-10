@@ -540,16 +540,9 @@ section{padding-block:clamp(64px,8vw,128px)}
 .op-card blockquote{margin:0;color:var(--ink-soft);font-size:var(--text-base);line-height:1.6}
 .op-autor{font-family:var(--font-display);font-weight:700;color:var(--ink);font-size:.95rem}
 
-/* === focal-point zdjęć (smartcrop) — cover nie utnie twarzy/obiektu === */
-img[src$="/hero.jpg"]{object-position:38% 50%}
-[style*="hero.jpg"]{background-position:38% 50%}
-img[src$="/g1.jpg"]{object-position:62% 50%}
-[style*="g1.jpg"]{background-position:62% 50%}
-img[src$="/g4.jpg"]{object-position:67% 50%}
-[style*="g4.jpg"]{background-position:67% 50%}
-img[src$="/g8.jpg"]{object-position:32% 50%}
-[style*="g8.jpg"]{background-position:32% 50%}
-img[src$="/g11.jpg"]{object-position:38% 50%}
-[style*="g11.jpg"]{background-position:38% 50%}
-img[src$="/g13.jpg"]{object-position:33% 50%}
-[style*="g13.jpg"]{background-position:33% 50%}
+/* === LOGO klienta (Capone): badge w nav - czarny rysunek na białym tle,
+   czytelny i na ciemnym scrimie nad hero, i na kremowym nav-solid === */
+.nav .brand.brand-has-logo{align-items:center;gap:.75rem}
+.brand-logo{height:44px;width:auto;border-radius:8px;box-shadow:0 1px 8px rgba(8,6,4,.28)}
+.nav.is-stuck .brand-logo{height:38px}
+@media(max-width:680px){.brand-logo{height:34px}}
